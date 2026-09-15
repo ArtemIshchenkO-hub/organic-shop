@@ -22,7 +22,6 @@
 }
 
 .hero-title {
-  font-family: var(--font-family-secondary);
   padding-bottom: 0.5rem;
 }
 
@@ -110,7 +109,6 @@
   }
 
   .hero-title {
-    font-size: 3.5rem;
     max-width: 40.4rem;
   }
 
