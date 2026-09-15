@@ -1,0 +1,37 @@
+:root {
+  --font-family-primary: 'Public Sans', sans-serif;
+  --font-family-secondary: 'Chivo', sans-serif;
+
+  --color-background-transparent: transparent;
+
+  --color-japanese-laurel-lightest: #e8eee5;
+  --color-japanese-laurel-lighter: #d1ddcc;
+  --color-japanese-laurel-light: #5e8a4d;
+  --color-japanese-laurel: #1a5901;
+  --color-japanese-laurel-dark: #144700;
+  --color-japanese-laurel-darker: #0a2300;
+  --color-japanese-laurel-darkest: #071a00;
+
+  --color-white: #fff;
+  --color-neutral-lightest: #f2f2f2;
+  --color-neutral-lighter: #d8d9d8;
+  --color-neutral-light: #b2b3b2;
+  --color-neutral: #80817f;
+  --color-neutral-dark: #4d4f4c;
+  --color-neutral-darker: #1a1d19;
+  --color-neutral-darkest: #010400;
+  --color-error-red: #a00000;
+
+  --opacity-white-10: rgba(255, 255, 255, 0.1);
+  --opacity-white-20: rgba(255, 255, 255, 0.2);
+  --opacity-neutral-darkest-10: rgba(1, 4, 0, 0.1);
+  --opacity-neutral-darkest-15: rgba(1, 4, 0, 0.15);
+  --opacity-neutral-darkest-30: rgba(1, 4, 0, 0.3);
+  --opacity-neutral-darkest-60: rgba(1, 4, 0, 0.6);
+
+  --shadow-card: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.12);
+  --shadow-inset: inset 0.125rem 0.44rem 1.69rem -0.25rem rgba(0, 0, 0, 0.15);
+
+  --button-border-radius: 0.375rem;
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
