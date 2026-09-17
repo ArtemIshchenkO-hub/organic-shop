@@ -76,11 +76,15 @@
 
 .header-nav-link {
   font-weight: 600;
-  transition: color var(--transition-base);
+  transition: opacity var(--transition-base);
 }
 
 .header-nav-link:is(:active, :hover, :focus) {
-  color: var(--color-neutral-darkest);
+  opacity: 0.5;
+}
+
+.header-nav-link:is(:active) {
+  opacity: 0.6;
 }
 
 .header-order-button-menu {

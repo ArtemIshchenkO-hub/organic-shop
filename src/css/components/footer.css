@@ -28,11 +28,7 @@
 .footer-nav-link {
   font-weight: 400;
   font-size: 1rem;
-  transition: color var(--transition-base);
-}
-
-.footer-nav-link:is(:active, :hover, :focus) {
-  color: var(--color-neutral-darkest);
+  transition: opacity var(--transition-base);
 }
 
 .footer-social-list {
@@ -51,8 +47,14 @@
   transition: opacity var(--transition-base);
 }
 
-.social-icon-wrapper:is(:hover, :focus, :active) .social-icon {
+.social-icon-wrapper:is(:hover, :focus) .social-icon,
+.footer-nav-link:is(:hover, :focus) {
   opacity: 0.5;
+}
+
+.social-icon-wrapper:is(:active) .social-icon,
+.footer-nav-link:is(:active) {
+  opacity: 0.6;
 }
 
 .footer-bottom {
