@@ -41,3 +41,12 @@
   background-color: var(--color-japanese-laurel-light);
   color: var(--color-neutral-darkest);
 }
+
+.button-transparent:is(:active),
+.button-green:is(:active) {
+  box-shadow: var(--shadow-card);
+}
+
+.button-white:is(:active) {
+  box-shadow: var(--shadow-inset);
+}
