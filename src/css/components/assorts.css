@@ -36,10 +36,10 @@
 }
 
 .assorts-name {
+  font-family: var(--font-family-primary);
   color: var(--color-neutral-darkest);
   font-weight: 600;
   font-size: 1.125rem;
-
   line-height: 1.5;
 }
 
@@ -76,7 +76,7 @@
   color: var(--color-white);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48rem) {
   .assorts-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -91,7 +91,7 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 90rem) {
   .assorts-title {
     max-width: 48rem;
     margin-bottom: 2rem;

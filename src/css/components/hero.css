@@ -52,7 +52,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .hero {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -80,8 +80,8 @@
 }
 
 @supports not (background-image: image-set(url('') 1x)) {
-  @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  @media screen and (min-width: 48rem) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 48rem) and (min-resolution: 192dpi) {
     .hero {
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -90,7 +90,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90rem) {
   .hero {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -122,8 +122,8 @@
 }
 
 @supports not (background-image: image-set(url('') 1x)) {
-  @media screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  @media screen and (min-width: 90rem) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 90rem) and (min-resolution: 192dpi) {
     .hero {
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),

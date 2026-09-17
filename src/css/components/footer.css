@@ -77,7 +77,7 @@
   font-size: 0.875rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48rem) {
   .footer .container {
     padding: 5rem 2rem;
   }
@@ -100,7 +100,7 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 90rem) {
   .footer .container {
     padding: 5rem 4rem;
   }
