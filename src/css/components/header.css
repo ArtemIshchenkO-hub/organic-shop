@@ -35,6 +35,16 @@
   fill: var(--color-white);
 }
 
+.burger-icon {
+  width: 1.5rem;
+  aspect-ratio: 1;
+}
+
+.close-icon {
+  width: 1rem;
+  aspect-ratio: 1;
+}
+
 .close-menu-btn,
 .header-order-button-tablet {
   display: none;
