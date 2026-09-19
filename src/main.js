@@ -7,7 +7,7 @@ import {
 } from './js/form/form-handlers';
 import { initActiveMenu } from './js/header/active-menu';
 import { animateHeader } from './js/header/header';
-import { toggleMenu } from './js/header/mobile-menu';
+import { handleMenuClick, toggleMenu } from './js/header/mobile-menu';
 import { refs } from './js/refs';
 
 initActiveMenu();
@@ -15,6 +15,7 @@ initActiveMenu();
 window.addEventListener('scroll', animateScrollToTopBtn, { passive: true });
 window.addEventListener('scroll', animateHeader, { passive: true });
 refs.headerEl.addEventListener('click', toggleMenu);
+refs.headerEl.addEventListener('click', handleMenuClick);
 refs.faqsList.addEventListener('click', toggleFaqs);
 
 refs.contactsForm.addEventListener('focusout', handleInputValidation);
