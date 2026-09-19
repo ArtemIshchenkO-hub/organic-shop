@@ -39,7 +39,7 @@
     />
 
     <script type="module" crossorigin src="/organic-shop/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/organic-shop/assets/index-CLE6WJK0.css">
+    <link rel="stylesheet" crossorigin href="/organic-shop/assets/index-CKa8Pg56.css">
   </head>
   <body>
     <header class="header">
@@ -983,7 +983,7 @@
           </li>
         </ul>
       </address>
-      <form class="contacts-form">
+      <form class="contacts-form" novalidate>
         <label for="name" class="contacts-form-label">Name</label>
         <input
           name="name"
@@ -993,6 +993,7 @@
           placeholder="Sarah"
           required
         />
+        <p class="form-error-message is-hidden"></p>
 
         <label for="email" class="contacts-form-label">Email</label>
         <input
@@ -1003,6 +1004,7 @@
           placeholder="hello@organic.com"
           required
         />
+        <p class="form-error-message is-hidden"></p>
 
         <label for="textarea" class="contacts-form-label">Message</label>
         <textarea
@@ -1011,7 +1013,9 @@
           placeholder="Type your message..."
           maxlength="500"
           class="contacts-form-message"
+          required
         ></textarea>
+        <p class="form-error-message is-hidden"></p>
 
         <button type="submit" class="contacts-form-button button button-green">
           Submit
