@@ -1,4 +1,5 @@
 import { animateScrollToTopBtn, scrollToTop } from './js/back-to-top';
+import { toggleFaqs } from './js/faqs';
 import {
   focusInputHandler,
   handleInputValidation,
@@ -14,6 +15,7 @@ initActiveMenu();
 window.addEventListener('scroll', animateScrollToTopBtn, { passive: true });
 window.addEventListener('scroll', animateHeader, { passive: true });
 refs.headerEl.addEventListener('click', toggleMenu);
+refs.faqsList.addEventListener('click', toggleFaqs);
 
 refs.contactsForm.addEventListener('focusout', handleInputValidation);
 refs.contactsForm.addEventListener('focusin', focusInputHandler);
