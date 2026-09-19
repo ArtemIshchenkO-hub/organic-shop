@@ -17,8 +17,7 @@ function updateHeader() {
 }
 
 export function animateHeader() {
-  if (document.body.classList.contains('is-open-menu')) return;
-  if (!ticking) {
+  if (!document.body.classList.contains('is-open-menu') && !ticking) {
     ticking = true;
     requestAnimationFrame(updateHeader);
   }

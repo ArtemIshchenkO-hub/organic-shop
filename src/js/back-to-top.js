@@ -20,8 +20,7 @@ function updateButton() {
 }
 
 export function animateScrollToTopBtn() {
-  if (document.body.classList.contains('is-open-menu')) return;
-  if (!ticking) {
+  if (!document.body.classList.contains('is-open-menu') && !ticking) {
     ticking = true;
     requestAnimationFrame(updateButton);
   }

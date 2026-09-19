@@ -55,7 +55,7 @@
 .contacts-form-message,
 .contacts-form-input {
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.25rem;
   font-size: 1rem;
 }
 
@@ -71,9 +71,37 @@
   border: 1px solid var(--opacity-neutral-darkest-15);
 }
 
+.contacts-form-input.has-error {
+  border-bottom: 1px solid var(--color-error-red);
+}
+
+.contacts-form-message.has-error {
+  border: 1px solid var(--color-error-red);
+}
+
 .contacts-form-input::placeholder,
 .contacts-form-message::placeholder {
   color: var(--opacity-neutral-darkest-60);
+}
+
+.form-error-message {
+  height: 1rem;
+  margin-bottom: 0.25rem;
+
+  opacity: 1;
+  visibility: visible;
+
+  font-size: 0.75rem;
+  color: var(--color-error-red);
+
+  transition:
+    opacity var(--transition-base),
+    visibility var(--transition-base);
+}
+
+.form-error-message.is-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .contacts-form-button {
