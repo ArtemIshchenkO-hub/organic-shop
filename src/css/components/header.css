@@ -5,7 +5,7 @@
   z-index: 1000;
   width: 100%;
 
-  transition: transform var(--transition-base);
+  transition: transform 1s ease;
 }
 
 .header.is-hidden {
@@ -52,7 +52,7 @@
 
 .header-nav {
   position: absolute;
-  top: 72px;
+  top: 71px;
   right: 0;
 
   width: 100%;
@@ -93,6 +93,7 @@
   opacity: 0.5;
 }
 
+.header-nav-link.is-active,
 .header-nav-link:is(:active) {
   opacity: 0.6;
 }

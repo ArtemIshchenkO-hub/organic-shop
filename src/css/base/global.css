@@ -6,6 +6,10 @@ body {
   background-color: var(--color-japanese-laurel-lightest);
 }
 
+body.is-open-menu {
+  overflow: hidden;
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: 400;

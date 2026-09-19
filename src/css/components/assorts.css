@@ -76,6 +76,10 @@
   color: var(--color-white);
 }
 
+.assorts-img {
+  width: 100%;
+}
+
 @media only screen and (min-width: 48rem) {
   .assorts-list {
     flex-direction: row;
@@ -84,10 +88,6 @@
 
   .assorts-item {
     width: calc((100% - 1rem) / 2);
-  }
-
-  .assorts-img {
-    width: 100%;
   }
 }
 

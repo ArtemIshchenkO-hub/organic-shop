@@ -50,3 +50,54 @@
 .button-white:is(:active) {
   box-shadow: var(--shadow-inset);
 }
+
+.back-to-top-btn {
+  border: none;
+  background-color: var(--color-japanese-laurel);
+  border-radius: 50%;
+  padding: 0;
+
+  position: fixed;
+  right: max(16px, calc((100vw - 375px) / 2 + 16px));
+  bottom: 30px;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    opacity var(--transition-base),
+    background-color var(--transition-base);
+}
+
+.back-to-top-btn-icon {
+  fill: var(--color-white);
+  width: 2rem;
+  aspect-ratio: 1;
+}
+
+.back-to-top-btn.is-visible {
+  visibility: visible;
+  opacity: 0.7;
+  pointer-events: auto;
+}
+
+.is-benefits {
+  background-color: var(--color-japanese-laurel-light);
+}
+
+.back-to-top-btn.is-visible:hover {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .back-to-top-btn {
+    right: max(32px, calc((100vw - 768px) / 2 + 32px));
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .back-to-top-btn {
+    right: max(64px, calc((100vw - 1440px) / 2 + 64px));
+  }
+}
